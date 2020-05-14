@@ -12,13 +12,13 @@ digraph G {
         struct3 [label="1110&#92; 1001"];
     }
 
-    struct1 -> struct1[label="5 ou >=7",weight="1"];
+    struct1 -> struct1[label="5 ou >=8",weight="1"];
     struct1 -> struct2[label="1",weight="1"];
     struct1 -> struct3[label="4,5",weight="1"];
 
     struct2 -> struct3[label="5",weight="1"];
-    struct2 -> struct1[label=">=7",weight="1"];
+    struct2 -> struct1[label=">=8",weight="1"];
 
-    struct3 -> struct1[label="5 ou >=7",weight="1"];
-    struct3 -> struct2[label="4,5",weight="1"];
+    struct3 -> struct1[label="5 ou >=8",weight="1"];
+    struct3 -> struct3[label="4,5",weight="1"];
 }
